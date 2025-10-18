@@ -1,0 +1,64 @@
+import { Bot, ChevronRight, Menu, Moon, Sun, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import paths from "@/data/paths.json";
+import Link from "next/link";
+
+export function Navbar({
+  isDark,
+  isActive,
+  toggleTheme,
+  toggleMenu,
+}: {
+  isDark: boolean;
+  isActive: boolean;
+  toggleTheme: () => void;
+  toggleMenu: () => void;
+}) {
+  return (
+    <header className="fixed top-0 w-full bg-background flex justify-center z-30">
+      <div className="w-full max-w-7xl flex justify-between items-center p-4">
+        <div className="font-bold flex gap-2 items-center justify-center">
+          <Bot className="duration-300" />
+          <p className="font-mono duration-300">ngorderin_bot</p>
+        </div>
+        <div className="md:hidden flex items-center gap-5">
+          <div
+            className="rounded-full cursor-pointer duration-300"
+            onClick={toggleTheme}
+          >
+            {isDark ? <Moon /> : <Sun />}
+          </div>
+          <div className="cursor-pointer duration-300" onClick={toggleMenu}>
+            {isActive ? <X /> : <Menu />}
+          </div>
+        </div>
+        <ul className="md:flex gap-5 text-sm hidden">
+          {paths.map((path) => (
+            <Link
+              href={`${path.path}`}
+              key={path.id}
+              className="cursor-pointer border-b-3 border-transparent hover:border-primary px-5 duration-300"
+            >
+              {path.name}
+            </Link>
+          ))}
+        </ul>
+        <div className="md:flex gap-4 items-center justify-center hidden">
+          <Button
+            className="rounded-full cursor-pointer p-5"
+            variant="secondary"
+            onClick={toggleTheme}
+          >
+            {isDark ? <Moon /> : <Sun />}
+          </Button>
+          <Link href="https://t.me/ngorderin_bot" target="_blank">
+            <Button className="cursor-pointer hover:scale-105 transition-transform flex gap-2 items-center justify-center">
+              <p>Try it now</p>
+              <ChevronRight />
+            </Button>
+          </Link>
+        </div>
+      </div>
+    </header>
+  );
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Instalasi Bot",
+    "delay": 0,
+    "description": "Tambahkan bot kami ke grup Telegram Anda hanya dengan satu klik, tanpa konfigurasi rumit. Cepat, mudah, dan siap digunakan!"
+  },
+  {
+    "id": 2,
+    "title": "Singkronisasi Report",
+    "delay": 0.1,
+    "description": "Hubungkan bot dengan Google Sheets Anda. Semua data stok otomatis tersinkronisasi dan diperbarui secara real-time."
+  },
+  {
+    "id": 3,
+    "title": "Jadwalkan Notifikasi",
+    "delay": 0.2,
+    "description": "Atur jadwal pengecekan stok otomatis. Bot akan mengirim notifikasi ke grup jika stok menipis, tanpa perlu dicek manual lagi."
+  }
+]

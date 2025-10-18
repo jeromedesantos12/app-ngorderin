@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Home",
+    "path": "#home"
+  },
+  {
+    "id": 2,
+    "name": "Steps",
+    "path": "#steps"
+  },
+  {
+    "id": 3,
+    "name": "Profile",
+    "path": "#profile"
+  }
+]
