@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Social } from "@/components/molecules/social";
+import { Social } from "@/components/atoms/social";
 import socials from "@/data/socials.json";
 import Link from "next/link";
 

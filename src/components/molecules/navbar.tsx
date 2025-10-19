@@ -1,19 +1,28 @@
+"use client";
+
 import { Bot, ChevronRight, Menu, Moon, Sun, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import paths from "@/data/paths.json";
 import Link from "next/link";
+import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 export function Navbar({
-  isDark,
   isActive,
-  toggleTheme,
   toggleMenu,
 }: {
-  isDark: boolean;
   isActive: boolean;
-  toggleTheme: () => void;
   toggleMenu: () => void;
 }) {
+  const { theme, setTheme, systemTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+  const currentTheme = theme === "system" ? systemTheme : theme;
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
   return (
     <header className="fixed top-0 w-full bg-background flex justify-center z-30">
       <div className="w-full max-w-7xl flex justify-between items-center p-4">
@@ -21,17 +30,19 @@ export function Navbar({
           <Bot className="duration-300" />
           <p className="font-mono duration-300">ngorderin_bot</p>
         </div>
+
         <div className="md:hidden flex items-center gap-5">
           <div
             className="rounded-full cursor-pointer duration-300"
-            onClick={toggleTheme}
+            onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}
           >
-            {isDark ? <Moon /> : <Sun />}
+            {currentTheme === "dark" ? <Moon /> : <Sun />}
           </div>
           <div className="cursor-pointer duration-300" onClick={toggleMenu}>
             {isActive ? <X /> : <Menu />}
           </div>
         </div>
+
         <ul className="md:flex gap-5 text-sm hidden">
           {paths.map((path) => (
             <Link
@@ -43,13 +54,14 @@ export function Navbar({
             </Link>
           ))}
         </ul>
+
         <div className="md:flex gap-4 items-center justify-center hidden">
           <Button
             className="rounded-full cursor-pointer p-5"
             variant="secondary"
-            onClick={toggleTheme}
+            onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}
           >
-            {isDark ? <Moon /> : <Sun />}
+            {currentTheme === "dark" ? <Moon /> : <Sun />}
           </Button>
           <Link href="https://t.me/ngorderin_bot" target="_blank">
             <Button className="cursor-pointer hover:scale-105 transition-transform flex gap-2 items-center justify-center">

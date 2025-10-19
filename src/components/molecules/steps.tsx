@@ -1,7 +1,7 @@
 import steps from "@/data/steps.json";
+import { Todo } from "@/components/atoms/todo";
 import { Sparkle } from "lucide-react";
 import { motion } from "framer-motion";
-import { Todo } from "./todo";
 
 export function Steps() {
   return (
