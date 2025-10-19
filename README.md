@@ -1,10 +1,10 @@
 # 📦 Telegram Stock Monitoring Bot
 
+Sistem ini adalah **automation bot Telegram** yang digunakan untuk memantau stok barang dari para supplier. Bot ini dibangun dengan integrasi ke **Google Sheets** untuk menyimpan data user dan produk, serta menggunakan **automation flow builder** (seperti n8n / Pipedream / Botpress) untuk menjalankan logika pesan dan notifikasi otomatis.
+
 - [Landing Page](https://app-ngorderin.vercel.app)
 - [Dashboard N8N](https://n8n-fygesfg1plg1.kobalt.sumopod.my.id)
 - [Fix Bug Theme](md/fix-theme.md)
-
-Sistem ini adalah **automation bot Telegram** yang digunakan untuk memantau stok barang dari para supplier. Bot ini dibangun dengan integrasi ke **Google Sheets** untuk menyimpan data user dan produk, serta menggunakan **automation flow builder** (seperti n8n / Pipedream / Botpress) untuk menjalankan logika pesan dan notifikasi otomatis.
 
 ---
 
