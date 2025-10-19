@@ -129,3 +129,9 @@ Bot secara otomatis mengirimkan pesan ke supplier terkait kondisi stok:
 - Notifikasi ke admin ketika ada supplier baru mendaftar
 - Grafik visualisasi stok mingguan
 - Integrasi dengan Google Form untuk input data supply
+
+## Note dari Penulis
+
+- Penambahan fitue timpa spreaadsheet product dari report erp, tapi masalahnya jangan sampai format tabelnya beda (kolomnya terbalik dll)
+- masalah authentifikasi juga, siapa yang bisa nimpa spreadsheet? jangan sampai semua user bisa akses /update (command untuk timpa product) mungkin pakai sistem role? tapi balik lagi gimana cara telegram bisa bedain ini user role admin atau bukan? masa iya via command juga? kalo admin pas /start tambah detail bawahnya atau pakai command tambahan /admin gitu buat super user? atuh gampang banget diakalinnya kalo gitu
+- jadi lebih baik mungkin timpa manual via google drive
