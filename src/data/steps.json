@@ -3,18 +3,18 @@
     "id": 1,
     "title": "Instalasi Bot",
     "delay": 0,
-    "description": "Tambahkan bot kami ke grup Telegram Anda hanya dengan satu klik, tanpa konfigurasi rumit. Cepat, mudah, dan siap digunakan!"
+    "description": "Pengguna memulai percakapan dengan bot untuk mendaftarkan akun Telegram pengguna ke dalam sistem sebagai supplier terdaftar."
   },
   {
     "id": 2,
     "title": "Singkronisasi Report",
     "delay": 0.1,
-    "description": "Hubungkan bot dengan Google Sheets Anda. Semua data stok otomatis tersinkronisasi dan diperbarui secara real-time."
+    "description": "Admin dapat melakukan sinkronisasi data produk dan stok dari sistem ERP dengan mengunggah file laporan (format .xlsx) langsung melalui chat Telegram bot."
   },
   {
     "id": 3,
     "title": "Jadwalkan Notifikasi",
     "delay": 0.2,
-    "description": "Atur jadwal pengecekan stok otomatis. Bot akan mengirim notifikasi ke grup jika stok menipis, tanpa perlu dicek manual lagi."
+    "description": "Setelah akun pengguna terhubung dengan bot, sistem akan otomatis mengaktifkan penjadwalan notifikasi."
   }
 ]
