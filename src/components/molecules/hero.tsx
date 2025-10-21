@@ -6,7 +6,10 @@ import Link from "next/link";
 
 export function Hero() {
   return (
-    <main className="flex flex-col md:flex-row gap-8 flex-wrap justify-center mt-40 md:mt-50 px-5">
+    <main
+      id="home"
+      className="flex flex-col md:flex-row gap-8 flex-wrap justify-center py-40 px-5"
+    >
       <div className="max-w-3xl flex flex-col gap-6">
         <motion.div
           initial={{ opacity: 0, translateY: "100%" }}

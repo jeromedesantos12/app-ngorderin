@@ -5,7 +5,10 @@ import { motion } from "framer-motion";
 
 export function Steps() {
   return (
-    <main className="flex flex-col gap-20 items-center mt-30 py-20 px-5 bg-accent">
+    <main
+      id="steps"
+      className="flex flex-col gap-20 items-center py-30 px-5 bg-accent"
+    >
       <div className="flex flex-col gap-5 max-w-6xl items-center text-center">
         <motion.div
           initial={{ opacity: 0, translateY: "100%" }}

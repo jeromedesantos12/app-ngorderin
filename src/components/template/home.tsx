@@ -15,16 +15,10 @@ export function Home() {
   return (
     <div>
       <Navbar isActive={isActive} toggleMenu={toggleMenu} />
-      <div id="home" className="border-2 border-transparent">
-        <Menu isActive={isActive} />
-        <Hero />
-      </div>
-      <div id="steps" className="border-2 border-transparent">
-        <Steps />
-      </div>
-      <div id="profile" className="border-2 border-transparent">
-        <Profile />
-      </div>
+      <Menu isActive={isActive} />
+      <Hero />
+      <Steps />
+      <Profile />
       <Footer />
     </div>
   );

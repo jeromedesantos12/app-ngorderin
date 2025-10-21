@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export function Profile() {
   return (
-    <main className="flex justify-center mt-20 p-10">
+    <main id="profile" className="flex justify-center py-20 px-10">
       <div className="max-w-6xl flex flex-col md:flex-row gap-10 md:gap-20 items-center">
         <motion.div
           initial={{ opacity: 0, translateX: "-100%" }}
