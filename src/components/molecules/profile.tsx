@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export function Profile() {
   return (
-    <main id={profiles.id} className="flex justify-center py-20 px-10">
+    <section id={profiles.id} className="flex justify-center py-20 px-10">
       <div className="max-w-6xl flex flex-col md:flex-row gap-10 md:gap-20 items-center">
         <motion.div
           initial={{ opacity: 0, translateX: "-100%" }}
@@ -49,6 +49,6 @@ export function Profile() {
           </motion.p>
         </div>
       </div>
-    </main>
+    </section>
   );
 }

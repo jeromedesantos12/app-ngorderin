@@ -6,9 +6,9 @@ import Link from "next/link";
 
 export function Menu({ isActive }: { isActive: boolean }) {
   return (
-    <div
+    <header
       className={cn(
-        "fixed bg-background right-0 top-15 w-full gap-4 px-4 py-5 md:hidden flex-col text-center items-center justify-center z-20",
+        "fixed bg-background right-0 top-14 w-full gap-4 px-4 py-5 md:hidden flex-col text-center items-center justify-center z-20",
         isActive ? "flex" : "hidden"
       )}
     >
@@ -27,6 +27,6 @@ export function Menu({ isActive }: { isActive: boolean }) {
         <p>Try it now</p>
         <ChevronRight />
       </Button>
-    </div>
+    </header>
   );
 }

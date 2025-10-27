@@ -5,20 +5,20 @@
   "todos": [
     {
       "id": 1,
-      "title": "Instalasi Bot",
       "delay": 0,
+      "title": "Instalasi Bot",
       "description": "Administrator melakukan proses instalasi dan menambahkan daftar nomor kontak supplier ke dalam spreadsheet sistem."
     },
     {
       "id": 2,
-      "title": "Sinkronisasi Data Laporan",
       "delay": 0.1,
+      "title": "Sinkronisasi Data Laporan",
       "description": "Administrator memasukkan serta memperbarui data produk dan stok supplier ke dalam spreadsheet untuk memastikan data laporan tetap sinkron."
     },
     {
       "id": 3,
-      "title": "Penjadwalan Notifikasi Otomatis",
       "delay": 0.2,
+      "title": "Penjadwalan Notifikasi Otomatis",
       "description": "Setelah data supplier berhasil dimasukkan ke spreadsheet, sistem akan secara otomatis mengaktifkan fitur penjadwalan notifikasi kepada pihak terkait."
     }
   ]

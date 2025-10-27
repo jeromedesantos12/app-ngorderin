@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 
 export function Steps() {
   return (
-    <main
+    <section
       id={steps.id}
-      className="flex flex-col gap-20 items-center py-30 px-5 bg-accent"
+      className="flex flex-col gap-20 items-center pt-30 py-50 px-5 bg-accent"
     >
       <div className="flex flex-col gap-5 max-w-6xl items-center text-center">
         <motion.div
@@ -41,6 +41,6 @@ export function Steps() {
           <Todo key={todo.id} {...todo} />
         ))}
       </ul>
-    </main>
+    </section>
   );
 }

@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export function Hero() {
   return (
-    <main
+    <section
       id={heros.id}
       className="flex flex-col md:flex-row gap-8 flex-wrap justify-center py-50 px-5"
     >
@@ -95,6 +95,6 @@ export function Hero() {
       >
         <GitFork size={350} className="hidden md:block" />
       </motion.div>
-    </main>
+    </section>
   );
 }

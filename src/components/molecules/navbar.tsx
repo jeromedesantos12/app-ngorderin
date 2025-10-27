@@ -39,11 +39,16 @@ export function Navbar({
           >
             {currentTheme === "dark" ? <Moon /> : <Sun />}
           </div>
-          <div className="cursor-pointer duration-300" onClick={toggleMenu}>
+          <div
+            className="cursor-pointer duration-300"
+            onClick={(e) => {
+              e.stopPropagation();
+              toggleMenu();
+            }}
+          >
             {isActive ? <X /> : <Menu />}
           </div>
         </div>
-
         <ul className="md:flex gap-5 text-sm hidden">
           {navbars.menus.map((menu) => (
             <Link
@@ -55,7 +60,6 @@ export function Navbar({
             </Link>
           ))}
         </ul>
-
         <div className="md:flex gap-4 items-center justify-center hidden">
           <Button
             className="rounded-full cursor-pointer p-5"

@@ -1,0 +1,54 @@
+{
+  "id": "testimoni",
+  "title": "Apa kata mereka?",
+  "users": [
+    {
+      "id": 1,
+      "delay": 0,
+      "src": "/users/muller.jpg",
+      "name": "Leonhardt Müller",
+      "dept": "Owner • Müller Handelszentrum",
+      "msg": "Ngorderin Bot membantu saya menghemat lebih dari tiga jam kerja setiap hari! Semua laporan stok langsung dikirim otomatis ke WhatsApp, benar-benar efisien."
+    },
+    {
+      "id": 2,
+      "delay": 0.1,
+      "src": "/users/becker.jpg",
+      "name": "Ansel Becker",
+      "dept": "Data Analyst • Becker Consulting",
+      "msg": "Integrasi ke Google Sheets-nya sangat mulus! Sekarang tim saya bisa memantau stok secara real-time tanpa harus buka laptop."
+    },
+    {
+      "id": 3,
+      "delay": 0.2,
+      "src": "/users/schneider.jpg",
+      "name": "Tobias Schneider",
+      "dept": "Warehouse Supervisor • Schneider Logistics",
+      "msg": "Fitur notifikasi otomatisnya luar biasa! Begitu stok menipis, saya langsung dapat pesan WhatsApp tanpa perlu cek manual."
+    },
+    {
+      "id": 4,
+      "delay": 0.3,
+      "src": "/users/vogel.jpg",
+      "name": "Markus Vogel",
+      "dept": "Regional Manager • Vogel Food Group",
+      "msg": "Ngorderin Bot memudahkan saya memantau stok di beberapa cabang sekaligus. Nggak perlu login ke sistem satu per satu lagi!"
+    },
+    {
+      "id": 5,
+      "delay": 0.4,
+      "src": "/users/lena.jpg",
+      "name": "Lena Hoffmann",
+      "dept": "Finance Officer • Hoffmann Bäckerei",
+      "msg": "Setiap Senin pagi saya langsung menerima laporan stok mingguan di WhatsApp. Sangat membantu menghemat waktu untuk pekerjaan lain."
+    },
+    {
+      "id": 6,
+      "delay": 0.5,
+      "src": "/users/jonas.jpg",
+      "name": "Jonas Weber",
+      "dept": "Store Owner • Weber Electronics",
+      "msg": "Tim saya bisa fokus jualan karena semua pencatatan stok sudah otomatis. Produktivitas naik, stres turun!"
+    }
+  ]
+}

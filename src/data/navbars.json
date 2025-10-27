@@ -8,11 +8,16 @@
     },
     {
       "id": 2,
+      "name": "Testimoni",
+      "path": "#testimoni"
+    },
+    {
+      "id": 3,
       "name": "Steps",
       "path": "#steps"
     },
     {
-      "id": 3,
+      "id": 4,
       "name": "Profile",
       "path": "#profile"
     }
