@@ -19,8 +19,8 @@ export function Home() {
       <Navbar isActive={isActive} toggleMenu={toggleMenu} />
       <Menu isActive={isActive} />
       <Hero />
-      <Testimoni />
       <Steps />
+      <Testimoni />
       <Profile />
       <Footer />
     </div>
