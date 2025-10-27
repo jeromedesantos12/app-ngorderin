@@ -49,6 +49,22 @@
       "name": "Jonas Weber",
       "dept": "Store Owner • Weber Electronics",
       "msg": "Tim saya bisa fokus jualan karena semua pencatatan stok sudah otomatis. Produktivitas naik, stres turun!"
+    },
+    {
+      "id": 7,
+      "delay": 0.6,
+      "src": "/users/clara.jpg",
+      "name": "Clara Meinhardt",
+      "dept": "Product Designer • Meinhardt Studio",
+      "msg": "UI-nya sederhana tapi fungsional banget! Setup-nya cuma butuh 10 menit dan notifikasi WhatsApp-nya selalu akurat."
+    },
+    {
+      "id": 8,
+      "delay": 0.7,
+      "src": "/users/braun.jpg",
+      "name": "Niklas Braun",
+      "dept": "Operations Lead • Braun Supplies",
+      "msg": "Sekarang saya bisa pantau stok dan penjualan langsung dari HP. Laporan harian otomatis dikirim tiap sore ke WhatsApp, simpel dan cepat!"
     }
   ]
 }

@@ -6,7 +6,7 @@ import testimonies from "@/data/testimonies.json";
 export default function Testimoni() {
   return (
     <section
-      className="pb-50 pt-30 px-5 flex flex-col gap-15 items-center"
+      className="pb-50 pt-40 px-5 flex flex-col gap-15 items-center"
       id={testimonies.id}
     >
       <div className="flex flex-col gap-5 max-w-6xl items-center">
