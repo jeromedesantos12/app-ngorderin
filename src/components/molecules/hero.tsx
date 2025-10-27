@@ -10,7 +10,7 @@ export function Hero() {
   return (
     <main
       id={heros.id}
-      className="flex flex-col md:flex-row gap-8 flex-wrap justify-center py-40 px-5"
+      className="flex flex-col md:flex-row gap-8 flex-wrap justify-center py-50 px-5"
     >
       <div className="max-w-3xl flex flex-col gap-6">
         <motion.div
