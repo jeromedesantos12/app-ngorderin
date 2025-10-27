@@ -37,7 +37,7 @@ export function Navbar({
             className="rounded-full cursor-pointer duration-300"
             onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}
           >
-            {currentTheme === "dark" ? <Moon /> : <Sun />}
+            {currentTheme === "dark" ? <Sun /> : <Moon />}
           </div>
           <div
             className="cursor-pointer duration-300"
@@ -66,7 +66,7 @@ export function Navbar({
             variant="secondary"
             onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}
           >
-            {currentTheme === "dark" ? <Moon /> : <Sun />}
+            {currentTheme === "dark" ? <Sun /> : <Moon />}
           </Button>
           <Link href={apps.link} target="_blank">
             <Button className="cursor-pointer hover:scale-105 transition-transform flex gap-2 items-center justify-center">
