@@ -7,19 +7,19 @@
       "id": 1,
       "title": "Instalasi Bot",
       "delay": 0,
-      "description": "Admin memasukkan daftar nomor supplier ke dalam spread sheet"
+      "description": "Administrator melakukan proses instalasi dan menambahkan daftar nomor kontak supplier ke dalam spreadsheet sistem."
     },
     {
       "id": 2,
-      "title": "Singkronisasi Report",
+      "title": "Sinkronisasi Data Laporan",
       "delay": 0.1,
-      "description": "Admin memasukkan daftar product beserta stock supplier ke dalam spread sheet."
+      "description": "Administrator memasukkan serta memperbarui data produk dan stok supplier ke dalam spreadsheet untuk memastikan data laporan tetap sinkron."
     },
     {
       "id": 3,
-      "title": "Jadwalkan Notifikasi",
+      "title": "Penjadwalan Notifikasi Otomatis",
       "delay": 0.2,
-      "description": "Setelah daftar supplier masuk ke dalam spreadsheet, sistem akan otomatis mengaktifkan penjadwalan notifikasi."
+      "description": "Setelah data supplier berhasil dimasukkan ke spreadsheet, sistem akan secara otomatis mengaktifkan fitur penjadwalan notifikasi kepada pihak terkait."
     }
   ]
 }
