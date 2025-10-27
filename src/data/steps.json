@@ -1,7 +1,7 @@
 {
   "id": "steps",
   "title": "Mulai Otomatiskan Pengecekan Stok Anda",
-  "description": "Hanya dalam tiga langkah sederhana, Anda dapat mengaktifkan sistem notifikasi stok otomatis yang langsung terhubung ke grup WhatsApp dan Google Sheets. Tidak perlu cek manual lagi — biarkan bot bekerja untuk Anda.",
+  "description": "Hanya dalam tiga langkah sederhana, Anda dapat mengaktifkan sistem notifikasi stok otomatis yang langsung terhubung ke WhatsApp dan Google Sheets. Tidak perlu cek manual lagi — biarkan bot bekerja untuk Anda.",
   "todos": [
     {
       "id": 1,
