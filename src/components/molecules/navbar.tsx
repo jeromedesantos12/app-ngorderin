@@ -2,10 +2,11 @@
 
 import { Bot, ChevronRight, Menu, Moon, Sun, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import paths from "@/data/paths.json";
-import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import navbars from "@/data/navbars.json";
+import apps from "@/data/apps.json";
+import Link from "next/link";
 
 export function Navbar({
   isActive,
@@ -28,7 +29,7 @@ export function Navbar({
       <div className="w-full max-w-7xl flex justify-between items-center p-4">
         <div className="font-bold flex gap-2 items-center justify-center">
           <Bot className="duration-300" />
-          <p className="font-mono duration-300">ngorderin_bot</p>
+          <p className="font-mono duration-300">{apps.title}</p>
         </div>
 
         <div className="md:hidden flex items-center gap-5">
@@ -44,13 +45,13 @@ export function Navbar({
         </div>
 
         <ul className="md:flex gap-5 text-sm hidden">
-          {paths.map((path) => (
+          {navbars.menus.map((menu) => (
             <Link
-              href={`${path.path}`}
-              key={path.id}
+              href={`${menu.path}`}
+              key={menu.id}
               className="cursor-pointer border-b-3 border-transparent hover:border-primary px-5 duration-300"
             >
-              {path.name}
+              {menu.name}
             </Link>
           ))}
         </ul>
@@ -63,7 +64,7 @@ export function Navbar({
           >
             {currentTheme === "dark" ? <Moon /> : <Sun />}
           </Button>
-          <Link href="https://t.me/ngorderin_bot" target="_blank">
+          <Link href={apps.link} target="_blank">
             <Button className="cursor-pointer hover:scale-105 transition-transform flex gap-2 items-center justify-center">
               <p>Try it now</p>
               <ChevronRight />

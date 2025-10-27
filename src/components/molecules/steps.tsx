@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export function Steps() {
   return (
     <main
-      id="steps"
+      id={steps.id}
       className="flex flex-col gap-20 items-center py-30 px-5 bg-accent"
     >
       <div className="flex flex-col gap-5 max-w-6xl items-center text-center">
@@ -17,7 +17,7 @@ export function Steps() {
           className="flex gap-2"
         >
           <Sparkle className="duration-300" />
-          <p className="duration-300">steps</p>
+          <p className="duration-300">{steps.id}</p>
         </motion.div>
         <motion.h1
           initial={{ opacity: 0, translateY: "100%" }}
@@ -25,7 +25,7 @@ export function Steps() {
           transition={{ duration: 0.5 }}
           className="text-5xl font-extrabold leading-tight tracking-tight duration-300"
         >
-          Mulai Otomatiskan Pengecekan Stok Anda
+          {steps.title}
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, translateY: "100%" }}
@@ -33,15 +33,12 @@ export function Steps() {
           transition={{ duration: 0.5 }}
           className="text-lg text-muted-foreground duration-300"
         >
-          Hanya dalam tiga langkah sederhana, Anda dapat mengaktifkan sistem
-          notifikasi stok otomatis yang langsung terhubung ke grup Telegram dan
-          Google Sheets. Tidak perlu cek manual lagi — biarkan bot bekerja untuk
-          Anda.
+          {steps.description}
         </motion.p>
       </div>
       <ul className="flex flex-col md:flex-row gap-5 justify-center flex-wrap">
-        {steps.map((step) => (
-          <Todo key={step.id} {...step} />
+        {steps.todos.map((todo) => (
+          <Todo key={todo.id} {...todo} />
         ))}
       </ul>
     </main>

@@ -1,20 +1,25 @@
-[
-  {
-    "id": 1,
-    "title": "Instalasi Bot",
-    "delay": 0,
-    "description": "Pengguna memulai percakapan dengan bot untuk mendaftarkan akun Telegram pengguna ke dalam sistem sebagai supplier terdaftar."
-  },
-  {
-    "id": 2,
-    "title": "Singkronisasi Report",
-    "delay": 0.1,
-    "description": "Admin dapat melakukan sinkronisasi data produk dan stok dari sistem ERP dengan mengunggah file laporan (format .xlsx) langsung melalui chat Telegram bot."
-  },
-  {
-    "id": 3,
-    "title": "Jadwalkan Notifikasi",
-    "delay": 0.2,
-    "description": "Setelah akun pengguna terhubung dengan bot, sistem akan otomatis mengaktifkan penjadwalan notifikasi."
-  }
-]
+{
+  "id": "steps",
+  "title": "Mulai Otomatiskan Pengecekan Stok Anda",
+  "description": "Hanya dalam tiga langkah sederhana, Anda dapat mengaktifkan sistem notifikasi stok otomatis yang langsung terhubung ke grup WhatsApp dan Google Sheets. Tidak perlu cek manual lagi — biarkan bot bekerja untuk Anda.",
+  "todos": [
+    {
+      "id": 1,
+      "title": "Instalasi Bot",
+      "delay": 0,
+      "description": "Admin memasukkan daftar nomor supplier ke dalam spread sheet"
+    },
+    {
+      "id": 2,
+      "title": "Singkronisasi Report",
+      "delay": 0.1,
+      "description": "Admin memasukkan daftar product beserta stock supplier ke dalam spread sheet."
+    },
+    {
+      "id": 3,
+      "title": "Jadwalkan Notifikasi",
+      "delay": 0.2,
+      "description": "Setelah daftar supplier masuk ke dalam spreadsheet, sistem akan otomatis mengaktifkan penjadwalan notifikasi."
+    }
+  ]
+}

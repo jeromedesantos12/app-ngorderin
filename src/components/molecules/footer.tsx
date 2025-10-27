@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 import { Social } from "@/components/atoms/social";
-import socials from "@/data/socials.json";
+import footers from "@/data/footers.json";
 import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="bg-dark pt-10 pb-10">
+    <footer id={footers.id} className="bg-dark pt-10 pb-10">
       <div className="flex flex-wrap justify-center gap-2 mb-5">
-        {socials.map((social) => (
+        {footers.socials.map((social) => (
           <Social key={social.id} {...social} />
         ))}
       </div>
@@ -19,7 +19,7 @@ export function Footer() {
       >
         Made with &#9829; by {""}
         <Link href="https://github.com/jeromedesantos12" target="_blank">
-          Jeremy Santoso
+          {footers.author}
         </Link>
       </motion.p>
     </footer>

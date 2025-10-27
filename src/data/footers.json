@@ -1,0 +1,30 @@
+{
+  "id": "footer",
+  "author": "Jeremy Santoso",
+  "socials": [
+    {
+      "id": 1,
+      "icon": "Youtube",
+      "delay": 0,
+      "href": "https://youtube.com/@kursusTUTOR"
+    },
+    {
+      "id": 2,
+      "icon": "Instagram",
+      "delay": 0.1,
+      "href": "https://youtube.com/@kursusTUTOR"
+    },
+    {
+      "id": 3,
+      "icon": "Linkedin",
+      "delay": 0.2,
+      "href": "https://linkedin.com/in/jeromedesantos12"
+    },
+    {
+      "id": 4,
+      "icon": "Github",
+      "delay": 0.3,
+      "href": "https://github.com/jeromedesantos12"
+    }
+  ]
+}
